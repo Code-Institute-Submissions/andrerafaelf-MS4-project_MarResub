@@ -17,10 +17,10 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Minerals</a>
-                <a href="" class="dropdown-item">Fossils</a>
-                <a href="" class="dropdown-item">Gemstone Beads</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=minerals" class="dropdown-item">Minerals</a>
+                <a href="{% url 'products' %}?category=fossils" class="dropdown-item">Fossils</a>
+                <a href="{% url 'products' %}?category=gemstone_beads" class="dropdown-item">Gemstone Beads</a>
+                <a href="{% url 'products' %}?category=minerals,fossils,gemstone_beads" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
