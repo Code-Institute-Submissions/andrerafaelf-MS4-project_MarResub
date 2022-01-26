@@ -9,8 +9,6 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 
 from products.models import Product
-from profiles.models import UserProfile
-from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 
 import stripe
@@ -141,7 +139,7 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'pk_test_51KLsQDKzVHAVlDbFaE3BGzWdwPCNfb6WzABTQtSS4CZQVBit06ZQdhAegLeQGPuqLZ3SB5rwplhDA2AlNA4at7LU00yJ7WeQiy',
+        'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
     }
 
