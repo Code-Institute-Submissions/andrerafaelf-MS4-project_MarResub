@@ -28,26 +28,27 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #e85a4f;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: white;
+    color: #e85a4f;
+    border: 1px solid #e85a4f;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: #e85a4f !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #e85a4f;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #e85a4f;
     color: white !important;
 }
 
@@ -57,20 +58,24 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #e85a4f;
     color: white;
 }
 
 .text-black {
-    color: #000 !important;
+    color: #e85a4f !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #e85a4f !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: white !important;
+}
+
+.bg-delivery {
+    background: #e85a4f;
 }
 
 .overlay {
@@ -84,7 +89,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    background: #e85a4f !important;
     color: #fff !important;
 }
 
@@ -129,7 +134,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #e85a4f;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -191,7 +196,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #e85a4f;
     border-radius: 0;
 }
 
@@ -215,8 +220,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #e85a4f;
+    border: 1px solid #e85a4f;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -229,8 +234,8 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: #e85a4f;
+    border-color: #e85a4f;
 }
 
 .allauth-form-inner-content a {
