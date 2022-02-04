@@ -121,7 +121,7 @@ WSGI_APPLICATION = 'eduzita_creations.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('postgres://merloaezieztje:a8b60f3aefe27002e02de6e081c581ee4bdf9d42d10634fd4e7a90606c6ff9fe@ec2-52-31-201-170.eu-west-1.compute.amazonaws.com:5432/d48h7a8ttgov8n'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
