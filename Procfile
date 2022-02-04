@@ -1,0 +1,1 @@
+web: gunicorn eduzita_creations.wsgi:application

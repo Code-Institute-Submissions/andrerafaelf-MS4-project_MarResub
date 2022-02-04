@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-&8rxpb7@ten&0sqyn9!2(i=9@lr_k^c1@z5pxqmdh%_ujry!0q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-silver-hawk-4eoalcug.ws-eu29.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['eduzita-creations.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -115,15 +115,21 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'eduzita_creations.wsgi.application'
 
 
-Database
-https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('postgres://merloaezieztje:a8b60f3aefe27002e02de6e081c581ee4bdf9d42d10634fd4e7a90606c6ff9fe@ec2-52-31-201-170.eu-west-1.compute.amazonaws.com:5432/d48h7a8ttgov8n'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
