@@ -4,7 +4,7 @@
 
 This is the main marketing website for Eduzita Creations. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src="https://i.imgur.com/jJ0AC0f.jpg"></h2>
 
 ## User Experience (UX)
 
@@ -39,11 +39,11 @@ This is the main marketing website for Eduzita Creations. It is designed to be r
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
-
-    -   Mobile Wireframe - [View](https://github.com/)
-
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    -   Shopping cart - [View](media/wireframes/cartpng.png)
+    -   Desktop - [View](media/wireframes/desktoppng.png)
+    -   Login page - [View](media/wireframes/loginpng.png)
+    -   Sign up page - [View](media/wireframes/signuppng.png)
+    -   Mobile - [View](media/wireframes/mobilepng.png)
 
 ## Features
 
@@ -82,68 +82,47 @@ This is the main marketing website for Eduzita Creations. It is designed to be r
 1. [Django:](https://www.djangoproject.com/)
     - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 
-## Testing
-
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals
+-   #### 
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-        2. The main points are made immediately with the hero image
-        3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
-
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
-
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
-
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
-
--   #### Returning Visitor Goals
-
-    1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
-
-        1. These are clearly shown in the banner message.
-        2. They will be directed to a page with another hero image and call to action.
-
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-        1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-        5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
-
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-        2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-        3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
-
--   #### Frequent User Goals
-
-    1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-
-        1. The user would already be comfortable with the website layout and can easily click the banner message.
-
-    2. As a Frequent User, I want to check to see if there are any new blog posts.
-
-        1. The user would already be comfortable with the website layout and can easily click the blog link
-
-    3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-        1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-        2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-        3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+    1. As a shopper I want to view a list of products so I can select some to purchase.
+        1. As the user enters the page they have a "shop now" button that displays all available products.
+    2. As a shopper I want to view a specific category of products to quickly find products I'm interested in withouth having to search through all products.
+        1. On the main navigation bar users have the option to filter different categories.
+    3. As a shopper I want to view individual product details to identify the price, description, product rating, product image and available sizes.
+        1. Users can click on the product image and will be redirected to the product page where all information can be found.
+    4. As a shopper I want to quickly identify deals, clearance items and special offers to take advantage of special savings on products I'd like to purchase.
+        1. On the main navigation bar there's a specific tab for special offers.
+    5. As a shopper I want to easily view the total of my purchases at any time to avoid spending too much.
+        1. On the top right of the page at all times will be displayed the value of the shopping cart.
+    6. As a shopper I want to sort the list of available products so I can easily identify the best rated, best priced and categorically sorted produtcs.
+        1. On the various product pages there's a product filtering list.
+    7. As a shopper I want to sort a specific category of product so I can find the best-priced or best-rated products across broad categories such as minerals, fossils and gemstone beads.
+        1. On the various product pages there's a product filtering list.
+    8. As a shopper I want to search for a product by name or description so I can find a specific product I'd like to purchase.
+        1. Users can search for products using key words or specific names to find desired products.
+    9. As a shopper I want to easily see what I've searched for and the number of results to quickly decide whether the product I want is available.
+        1. After entering a key word or name all matching items will show up as a list.
+    10. As a shopper I want to easily select the quantity of a product when purchasing it to ensure I don't accidentally select the wrong product or quantity.
+        1. There is a quantity selector on each product page, including checkout bag.
+    11. As a shopper I want to view items in my bag to be purchased to identify the total cost of my purchase before checkout.
+        1. Before final purchase users will have the chance to verify and complete payment.
+    12. As a shopper I want to adjust the quantity of individual items in my bag to easily make changes to my purchase before checkout.
+        1. Before final purchase users will have the chance to verify and complete payment.
+    13. As a shopper I want to easily enter my payment information to check out quickly and without hassle.
+        1. To even more simplify this users can complete payment and delivery information in the profile tab.
+    14. As a site user I want to easily register for an account so I can have a personal account and be able to view my profile.
+        1. Any user can register for a new account and personalize profile in the profile tab.
+    15. As a site user I want to easily login or logout so I can access my personal account information.
+        1. Any user can register for a new account and personalize profile in the profile tab.
+    16. As a site user I want to easily recover my password in case I forget it.
+        1. User can recover password and will be prompted with a recovery email address.
+    17. As a site user I want to receive an email confirmation after registering so I can verify that my account registraion was successful.
+        1. Users will receive an email confirmation link right after registering a new account.
+    18. As a site user I want to have a personalized user profile so I can view my personal order history and order confirmations, and save my payment information.
+        1. In the profile tab all users will be able to view past and present orders as well as saving delivery and payment information.
 
 ### Further Testing
 
@@ -152,66 +131,61 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-### Known Bugs
-
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
-
 ## Deployment
+###	Forking the GitHub Repository
 
-### GitHub Pages
+Forking a repository enables us to make a copy of the original repository on our GitHub account so we can view it and make changes without affecting the original work.
+This is done using the following steps:
+ 1. Log in to [GitHub](https://github.com/shaff600) account and select the relevant repository.
+ 2. To the top right of the page there are three buttons, the furthest right says **Fork.** Click on this button.
+ 3. A copy of the original repository will now be in your account.
+###	Making a Clone
+To make a clone of my project use the following steps:
+ 1. Go to my [account](https://github.com/shaff600) and locate the relevant repository.
+ 2. Next to the green **Gitpod** button, click on **CODE.**
+ 3. Click on **Download Zip.**
+ 4. Once downloaded, you can extract the zip file's contents and save it to a desktop and run the website locally.
 
-The project was deployed to GitHub Pages using the following steps...
+ ### Setting up the app
+ - Within you work inviroment terminal:
+    - Install requirements file, enter. 'pip install -r requirements.txt' in the terminal 
+    - Import data
+	    - "python3 manage.py loaddata categories.json"
+		    - ensure this import is loaded first as brands and product rely on the relationship 
+		- "python3 manage.py loaddata brands.json"
+		- "python3 manage.py loaddata products.json"
+		- Create a Super User to gain Admin access
+			- "python3 manage.py createsuperuser
+			- Enter credentials 
+			- Navigate to "/admin/ URL on local host
+  
+**Create Heroku application:**
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+1.  Signed into Heroku
+2.  Created a new app by clicking the "new" button.
+3.  Select the new app
+4.  Created the app project name
+5.  In the resources tab, provision a new Postgres database.
+7.  To use Postgres, in the gitpod terminal install dj_database_url (pip3 install dj_database_url) and psycopg2 (pip3 install psycopg2-binary)
 
-### Forking the GitHub Repository
+**Setup AWS S3 Bucket:**
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
-
-### Making a Local Clone
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
-
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+1.  Created an AWS account
+2.  Went into the management console
+3.  Selected S3
+4.  Named a bucked related to the project
+5.  Selected the closest region
+6.  Allowed public access to the bucket, config changes required 
+7.  Within the properties tab switched on static website hosting
+8.  Within the permissions ta, pasted the CORS configuration which allows access between the Heroku app and the S3 bucket.
+9.  Created a security policy for the S3 bucket using the built-in policy generator
+10.  Set Action as "GetObject", copy and paste the unique ARN
+11.  Copied the generated policy into the bucket policy editor
+12.  Went onto the access control tab and sekected the public access item
 
 ## Credits
 
 ### Code
-
--   The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
-
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
 -   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
