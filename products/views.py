@@ -3,7 +3,7 @@ from xml.etree.ElementTree import Comment
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q, Sum, Count, Avg
+from django.db.models import Q, Sum, Count, Avg, F
 from django.db.models.functions import Lower, Coalesce
 
 from .models import Product, Category, ProductComment, ProductReview
@@ -50,6 +50,10 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+    products = products.annotate(
+        total_stars=Sum("reviews__stars"), total_reviews=Count("reviews")
+    ).annotate(star_rating=F("total_stars") / F("total_reviews"))
+
     current_sorting = f"{sort}_{direction}"
 
     context = {
@@ -72,7 +76,7 @@ def product_detail(request, product_id):
     total_reviews = product.reviews.count()
     total_stars = product.reviews.aggregate(stars=Coalesce(Sum("stars"), 0))["stars"]
     if total_reviews:
-        avg_stars = total_stars / (5 * total_reviews)
+        avg_stars = total_stars / total_reviews
     else:
         avg_stars = 0
 
