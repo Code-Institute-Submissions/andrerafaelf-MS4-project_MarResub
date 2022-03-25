@@ -114,7 +114,7 @@
         <div class="col bg-delivery text-white justify-content-center  ">
             <h4 class="text-center my-1">Customer Reviews</h4>
             <h5 class="text-end">{% if total_reviews %}
-                <span> reviews:{{total_reviews}}&nbsp Rating:{{star_rating}}</span>
+                <span> Customer reviews: {{total_reviews}}&nbsp Overall rating: {{star_rating}}</span>
                 {% endif %}</h5>
         </div>
 
@@ -134,19 +134,19 @@
     <div class="row justify-content-center"><a href="{% url 'account_login' %}">Please Login to leave review</a> </div>
     {% endif %}
     {% for review in product.reviews.all %}
-    <div class="row mx-5 border border-2 mb-5 ">
-        <div class="col-2">
-            <p>{{review.user.username}}</p>
+    <div class="row mx-5 border border-2 mb-5">
+        <div class="col-4">
+            <h4 class="text-center">Review made by: <u>{{review.user.username}}</u></h4>
+            <p class="text-center">{{review.productcomment.comment}}</p>
         </div>
-        <div class="col-8">
+        <div class="col-6">
             <div class="row">
-                <div class="col-md-10 offset-md-8 justify-content-between ">
+                <div class="col-md-10 offset-md-8 justify-content-between text-center">
                     <span class="bold">Rating: {{review.stars}}</span>
-                    <span>&nbsp; Since: {{review.created_at|timesince }} ago</span>
                 </div>
-            </div>
-            <div class="row  lead">
-                {{review.productcomment.comment}}
+                <div class="col-md-10 offset-md-8 justify-content-between text-center">
+                    <span>Since: {{review.created_at|timesince }} ago</span>
+                </div>
             </div>
         </div>
 
